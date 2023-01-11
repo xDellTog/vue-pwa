@@ -1,0 +1,15 @@
+{
+  "short_name": "Vue PWA",
+  "name": "Vue PWA",
+  "description": "Weather forecast information",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "display": "standalone",
+  "background_color": "#3367D6",
+  "theme_color": "#3367D6"
+}
