@@ -3,11 +3,12 @@
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
   "compilerOptions": {
     "baseUrl": ".",
+    "isolatedModules": false,
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["vite-plugin-pwa/client"]
   },
-
   "references": [
     {
       "path": "./tsconfig.config.json"
