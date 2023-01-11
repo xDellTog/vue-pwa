@@ -9,6 +9,7 @@
       "sizes": "150x150"
     }
   ],
+  "id": "/",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
