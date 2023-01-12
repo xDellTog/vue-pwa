@@ -22,11 +22,11 @@ export default defineConfig({
         theme_color: "#FFF",
         icons: [
           {
-            "src": "/logo.svg",
-            "sizes": "150x150",
-            "type": "image/svg+xml"
+            src: "/logo.svg",
+            sizes: "150x150",
+            type: "image/svg+xml",
           },
-        ]
+        ],
       },
       registerType: "autoUpdate",
       devOptions: {

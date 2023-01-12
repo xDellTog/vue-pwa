@@ -1,17 +1,22 @@
 <script setup lang="ts">
-import TheWelcome from "../components/TheWelcome.vue";
 import { useConnectionStore } from "@/stores/connection";
 
 const connectionStore = useConnectionStore();
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
+  <main class="flex flex-col items-center justify-center h-screen">
+    <img
+      alt="Vue logo"
+      class="logo"
+      src="@/assets/logo.svg"
+      width="125"
+      height="125"
+    />
 
     <div>
-      {{ connectionStore.isOnline }}
-      {{ connectionStore.isOffline }}
+      <p>isOnline: {{ connectionStore.isOnline }}</p>
+      <p>isOffline: {{ connectionStore.isOffline }}</p>
     </div>
   </main>
 </template>
