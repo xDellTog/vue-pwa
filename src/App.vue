@@ -20,6 +20,6 @@ const connectionStore = useConnectionStore();
       connectionStore.isOnline ? 'bg-green-500' : 'bg-red-500'
     }`"
   >
-    Online
+    {{ connectionStore.isOnline ? "Online" : "Offline" }}
   </footer>
 </template>
