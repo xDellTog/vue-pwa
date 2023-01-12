@@ -23,3 +23,12 @@ const connectionStore = useConnectionStore();
     {{ connectionStore.isOnline ? "Online" : "Offline" }}
   </footer>
 </template>
+
+<style lang="css" scoped>
+header {
+  padding-top: env(safe-area-inset-top);
+}
+footer {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+</style>
