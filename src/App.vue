@@ -6,8 +6,8 @@ const connectionStore = useConnectionStore();
 </script>
 
 <template>
-  <header class="fixed bg-blue-500 text-white w-screen p-2">
-    <nav class="flex gap-2">
+  <header class="fixed w-screen">
+    <nav class="flex gap-2 bg-blue-500 text-white p-2 h-full">
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
     </nav>
@@ -15,12 +15,16 @@ const connectionStore = useConnectionStore();
 
   <RouterView />
 
-  <footer
-    :class="`fixed bottom-0  text-white w-screen p-2 ${
-      connectionStore.isOnline ? 'bg-green-500' : 'bg-red-500'
-    }`"
-  >
-    {{ connectionStore.isOnline ? "Online" : "Offline" }}
+  <footer class="fixed bottom-0 w-screen">
+    <nav
+      :class="`text-white  p-2 ${
+        connectionStore.isOnline ? 'bg-green-500' : 'bg-red-500'
+      }`"
+    >
+      <span>
+        {{ connectionStore.isOnline ? "Online" : "Offline" }}
+      </span>
+    </nav>
   </footer>
 </template>
 
